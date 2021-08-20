@@ -1,0 +1,43 @@
+h1 {
+    color: blue;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: lightblue;
+    position:fixed;
+    top:10px;
+    left:1000px;
+}
+
+table {
+    border: solid thick black;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+#facts {
+    text-align: center;
+    color: green;
+}
+
+th, td {
+    border: solid thin black;
+}
+
+aside {
+    float: right;
+}
+
+footer {
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
