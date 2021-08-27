@@ -1,5 +1,5 @@
 nav {
-    background-color: transparent;
+    background-color: darkblue;
     position: fixed;
     top: 10px;
     height: 50px;
@@ -16,8 +16,8 @@ nav {
     padding: 5px;
     font-size: 26px;
     text-decoration: none;
-    color: blue;
-    border: 5px solid black;
+    color: white;
+    
 }
 
 .navbar-links a:hover {
@@ -27,15 +27,17 @@ nav {
 .article {
     display: flex;
     margin-top: 70px;
+    margin: 70px auto 0px auto;
     border: 2px solid black;
     height: auto;
+    gap: 20px;
+    width: 80%;
 }
 
 .name-date{
-    border-right: 2px dashed black;
     padding: 10px;
     display: inline-block;
-    border-bottom: 2px solid black;
+    border-bottom: 2px dashed black;
 }
 
 p {
@@ -45,17 +47,20 @@ p {
 
 .image {
     display: flex;
-    background-color: lightblue;
     flex-direction: row;
     align-items: center; 
+    max-width: 400px;
+    min-width: 150px;
 }
 
 .frame {
-    max-height: 250px;
+    
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content {
+    display: flex;
     flex-direction: column;
 }
