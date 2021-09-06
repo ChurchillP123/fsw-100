@@ -1,0 +1,58 @@
+#flex-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    height: 400px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div > div {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    transition: background-color ease-in-out 2s;
+}
+
+#box-1:hover {
+    width: 100%;
+    background-color: orange;
+}
+
+#box-2:hover {
+    border-radius: 50%;
+    background-color: red;
+}
+
+#box-3:hover {
+    box-shadow: 5px 5px 5px pink;
+    border: 3px dotted pink;
+    background-color: red;
+}
+
+#box-4:hover {
+    margin: 10px;
+    background-color: red;
+}
+
+#box-5:hover {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
+
+#box-6:hover {
+    opacity: 0.2;
+    align-self: flex-end;
+    background-color: red;
+}
+
+audio {
+    align-self: flex-end;
+    width: 40%;
+    margin: 10px;
+}
