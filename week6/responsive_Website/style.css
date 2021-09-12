@@ -1,0 +1,153 @@
+/* Common Breakpoints
+Mobile: 360 x 720
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    background-color: grey;
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+    height: 20px;
+}
+
+.navbar {
+    background-color: black;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+}
+
+h2 {
+    align-self: center;
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th {
+    border-left: 2px dashed black;
+    border-bottom: 2px dashed black;
+    padding: 3px;
+}
+
+td {
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    background-color: red;
+}
+
+ul {
+    background-color: black;
+    align-self: center;
+}
+
+li {
+    background-color: red;
+    line-height: 25px;
+}
+
+li:hover {
+    transform: translateX(-10px);
+}
+
+#logo {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    max-width: 250px;
+    align-self: center;    
+}
+
+h1 {
+    display: none;
+}
+
+.pizzas {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        display:block;
+        font-family: 'Monoton', cursive;
+        align-self: center;
+        color: pink;
+        background-color: black;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    a {
+        font-size: 40px;
+    }
+
+    li {
+        line-height: 35px;
+        background-color: black;
+    }
+
+    li:hover {
+        transform:translateX(-20px);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .navbar {
+        grid-column: 1/-1;
+    }
+
+    h2 {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .pizzas {
+        display: inline;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .main-content {
+        font-size: 40px;
+        align-self: center;
+    }
+    
+    th, td {
+        font-size: 40px;
+    }
+}
