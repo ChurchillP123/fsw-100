@@ -1,0 +1,76 @@
+/* Common Breakpoints
+Mobile: 360 x 720
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+
+#logo {
+    width: 125px;
+    height: 125px;
+    align-self: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+#company-name {
+    align-self: center;
+    text-align: right;
+    color: white;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 25pt;
+}
+
+li a {
+    color: red;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration:underline;
+}
+
+.material-icons{
+    color: blue;
+}
+
+ul li {
+    margin: 5px;
+}
+
+.menu-item {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.photos {
+    max-width: 100%;
+    height: auto;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+
+
